@@ -11,5 +11,4 @@ jobs:
     steps:
       - name: Panggil Edge Function Supabase
   run: |
-    curl -X POST "https://tlwejtywxlznzjfacxg.supabase.co/functions/v1/auto-presence" \
-         -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}"
+    curl -X POST "https://tlwejtywxlznzjfacxg.supabase.co/functions/v1/auto-presence" 

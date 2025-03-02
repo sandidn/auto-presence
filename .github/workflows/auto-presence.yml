@@ -9,6 +9,10 @@ jobs:
   run-cron:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+    
       - name: Panggil Edge Function Supabase
   run: |
     curl -X POST "https://tlwejtywxlznzjfacxg.supabase.co/functions/v1/auto-presence" 

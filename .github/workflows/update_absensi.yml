@@ -1,0 +1,12 @@
+name: Update Absensi
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Menjalankan setiap hari pukul 00:00 UTC
+
+jobs:
+  run-cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Panggil Edge Function Supabase
+        run: curl -X POST "https://tlwejtywlxzlnzjfacxg.supabase.co/functions/v1/update_absensi"

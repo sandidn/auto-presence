@@ -14,5 +14,5 @@ jobs:
 
       - name: Panggil Edge Function Supabase
         run: |
-          curl -X POST "https://tlwejtywxlznzjfacxg.supabase.co/functions/v1/auto-presence" \
+          curl -X POST "https://tlwejtywlxzlnzjfacxg.supabase.co/functions/v1/auto-presence" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}"

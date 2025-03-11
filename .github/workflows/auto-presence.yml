@@ -16,3 +16,7 @@ jobs:
         run: |
           curl -X POST "https://tlwejtywlxzlnzjfacxg.supabase.co/functions/v1/auto-presence" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}"
+          
+      - name: Debug Log
+        run: echo "Calling Supabase Edge Function..."
+

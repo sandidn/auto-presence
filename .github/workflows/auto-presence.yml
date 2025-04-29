@@ -2,7 +2,7 @@ name: Update Absensi
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Menjalankan setiap hari pukul 00:00 UTC
+    - cron: "59 16 * * *" # Menjalankan setiap hari pukul 00:00 UTC
   workflow_dispatch: # Memungkinkan workflow dijalankan secara manual
 
 jobs:
